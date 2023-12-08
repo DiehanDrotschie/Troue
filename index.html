@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Card Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h1>Enter Details</h1>
+                <input type="text" id="name" placeholder="Name">
+                <input type="text" id="surname" placeholder="Surname">
+                <button onclick="flipCard()">Submit</button>
+            </div>
+            <div class="flip-card-back">
+                <h1>Table Number</h1>
+                <div id="tableNumber">---</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
