@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-image: url('background.jpg'); /* Add your background image here */
+     font-family: 'Dancing Script', cursive;
+   background-image: url('background.jpg'); /* Add your background image here */
     display: flex;
+    background-color: dimgray;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -10,8 +13,8 @@ body {
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
+    width: 550px;
+    height: 450px;
     perspective: 1000px;
 }
 
@@ -26,9 +29,9 @@ body {
     border-radius: 15px;
 }
 
-.flip-card:hover .flip-card-inner {
+/*.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-}
+}*/
 
 .flip-card-front, .flip-card-back {
     position: absolute;
@@ -39,13 +42,13 @@ body {
 }
 
 .flip-card-front {
-    background-color: #bbb;
+    background-color: #c0bf8d;
     color: black;
 }
 
 .flip-card-back {
-    background-color: #2980b9;
-    color: white;
+    background-color: #c0bf8d;
+    color: black;
     transform: rotateY(180deg);
 }
 

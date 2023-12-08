@@ -10,3 +10,9 @@ function flipCard() {
         alert("Please enter both name and surname");
     }
 }
+
+function flipback() {
+    var card = document.querySelector('.flip-card-inner');
+    card.style.transform = 'rotateY(0deg)';
+
+}
