@@ -2,8 +2,8 @@ function flipCard() {
     var name = document.getElementById("name").value;
     var surname = document.getElementById("surname").value;
 
-    if(name && surname) {
-        document.getElementById("tableNumber").innerText = `Hello, ${name} ${surname}`;
+    if (name && surname) {
+        document.getElementById("tableNumber").innerText = `Welcome, ${name} ${surname} and (Date)`;
         var card = document.querySelector('.flip-card-inner');
         card.style.transform = 'rotateY(180deg)';
     } else {
@@ -14,5 +14,8 @@ function flipCard() {
 function flipback() {
     var card = document.querySelector('.flip-card-inner');
     card.style.transform = 'rotateY(0deg)';
+
+    document.getElementById("name").value = '';
+    document.getElementById("surname").value = '';
 
 }
