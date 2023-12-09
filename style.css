@@ -73,8 +73,14 @@ input[type="text"] {
     padding: 15px; 
 }
 
+#Number {
+    margin-top: 10%;
+    font-size: 50pt;
+
+}
+
 .flip-card-back button {
-    margin-top: 175px;
+    margin-top: 10%;
     width: 25%;
     height: 10%;
 }

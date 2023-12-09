@@ -8,30 +8,24 @@ function flipCard() {
         card.style.transform = 'rotateY(180deg)';
 
 
-
-fetch('/search-guest', {
-        method: 'POST',
-        headers: {
+        fetch('/searchGuest', {
+            method: 'POST',
+            headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, surname })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.found) {
-            // Display the name and surname
-            console.log("Guest Found: ", data.guest.Name, data.guest.Surname);
-            // Update this line to display on your webpage
-            document.getElementById("tableNumber").textContent = `Guest Found: ${data.guest.Name} ${data.guest.Surname}`;
-        } else {
-            console.log("Guest Not Found");
-            // Update this line to display on your webpage
-            document.getElementById("tableNumber").textContent = "Guest Not Found";
-        }
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-    });
+            body: JSON.stringify({ name: name, surname: surname }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                  if (data.length > 0) {
+                // Assuming data returns an array and the table number is in the first result
+                    var tableNumber = data[0].TableNumber; // Replace 'TableNumber' with the actual field name from your database
+                    document.getElementById("tableNumber").innerText = `Table Number: ${Table_Number}`;
+                } else {
+                    document.getElementById("tableNumber").innerText = "Guest Not Found";
+                }
+        });
+
 
 
 
