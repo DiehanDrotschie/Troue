@@ -15,7 +15,7 @@ function flipCard() {
         },
             body: JSON.stringify({ name: name, surname: surname }),
         })
-            .then(response => response.json())
+            .then(res => res.json())
             .then(data => {
                   if (data.length > 0) {
                 // Assuming data returns an array and the table number is in the first result
@@ -25,9 +25,6 @@ function flipCard() {
                     document.getElementById("tableNumber").innerText = "Guest Not Found";
                 }
         });
-
-
-
 
     } else {
         alert("Please enter both name and surname");
