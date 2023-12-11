@@ -13,11 +13,24 @@ body {
     margin: 0;
 }
 
+
 .flip-card {
     background-color: transparent;
-    width: 550px;
-    height: 450px;
+    width: 80%; /* Relative width */
+    height: 60vh; /* Relative height based on the viewport height */
     perspective: 1000px;
+    max-width: 550px; /* Maximum width to ensure it doesn't get too large on wider screens */
+    max-height: 450px; /* Maximum height */
+    margin: auto; /* To center the card in the container */
+}
+
+/* Media query for smaller screens, like mobile devices */
+@media only screen and (max-width: 600px) {
+    .flip-card {
+        width: 90%; /* Increase width on smaller screens */
+        height: 50vh; /* Adjust height as needed */
+        /* Additional style adjustments for mobile devices can go here */
+    }
 }
 
 .flip-card-inner {
@@ -65,7 +78,9 @@ h2 {
 input[type="text"] {
     margin: 10px 0;
     padding: 10px;
+    width: 30%;
     margin-top: 9%;
+    font-size: 16px;
 }
  
 #tableNumber{
@@ -80,9 +95,16 @@ input[type="text"] {
 }
 
 .flip-card-back button {
-    margin-top: 10%;
+    margin-top: 4%;
     width: 25%;
     height: 10%;
+}
+
+.flip-card-front button {
+    margin-top: 1%;
+    width: 25%;
+    height: 10%;
+
 }
 
 button {
