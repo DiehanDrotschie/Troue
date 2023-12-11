@@ -2,7 +2,7 @@
 
 body {
      font-family: 'Dancing Script', cursive;
-    background-image: url('https://raw.githubusercontent.com/DiehanDrotschie/Troue/main/wed.jpg?raw=true');
+    background-image: url('https://raw.githubusercontent.com/DiehanDrotschie/Troue/main/pic1.jpg?raw=true');
     background-size: cover; /* Resize the background image to cover the entire container */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
@@ -22,6 +22,7 @@ body {
     max-width: 550px; /* Maximum width to ensure it doesn't get too large on wider screens */
     max-height: 450px; /* Maximum height */
     margin: auto; /* To center the card in the container */
+    margin-bottom: 70%;
 }
 
 /* Media query for smaller screens, like mobile devices */
@@ -30,6 +31,11 @@ body {
         width: 90%; /* Increase width on smaller screens */
         height: 50vh; /* Adjust height as needed */
         /* Additional style adjustments for mobile devices can go here */
+    }
+
+        body {
+        background-size: auto; /* Example: Adjust background size on small screens */
+        background-position: top ; /* Example: Adjust background position on small screens */
     }
 }
 
