@@ -6,6 +6,7 @@
     <title>Flip Card Form</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="https://github.com/DiehanDrotschie/Troue/blob/main/pic1.jpg?raw=true" as="image">
 </head>
 <body>
     <div class="flip-card">
@@ -21,7 +22,12 @@
                 <button onclick="flipCard()">Find table</button>
             </div>
             <div class="flip-card-back">
-                <div id="tableNumber">---</div>
+                <!-- container to show welcome message-->
+                <div id="welcomeContainer">
+                    <div id="welcomeText">Welcome:</div>
+                    <div id="userName"></div>
+                </div>
+                <!-- Show the table number-->
                 <h2>Table Number</h2>
                 <div id="Number">-</div>
                 <button onclick="flipback()">Back</button>
