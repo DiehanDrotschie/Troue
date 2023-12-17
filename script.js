@@ -13,7 +13,7 @@ function flipCard() {
              if (user) {
                 var card = document.querySelector('.flip-card-inner');
                 card.style.transform = 'rotateY(180deg)';
-                 if (user.Date_Name === null) {
+                 if (user.Date_Name == "null") {
                     document.getElementById("userName").innerText = `${user.Name} and ${user.Surname}`;
                 } else {
                     document.getElementById("userName").innerText = `${user.Name} and ${user.Date_Name}`;               
@@ -24,7 +24,7 @@ function flipCard() {
                 var card = document.querySelector('.flip-card-inner');
                  card.style.transform = 'rotateY(180deg)';
                  /*Check if person has a date*/
-                   if (user2.Date_Name === null) {
+                   if (user2.Date_Name == "null") {
                     document.getElementById("userName").innerText = `${user2.Name} and ${user2.Surname}`;
                 } else {
                     document.getElementById("userName").innerText = `${user2.Name} and ${user2.Date_Name}`;               
