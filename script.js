@@ -48,3 +48,96 @@ function flipback() {
     document.getElementById("surname").value = '';
 
 }
+
+// Function to dynamically adjust element sizes
+function adjustElementSizes() {
+    var screenWidth = window.innerWidth;
+    var screenHeight = window.innerHeight;
+    var isMobile = screenWidth <= 768; 
+    
+    // Example: Adjusting flip card width
+    var flipCardWidth = screenWidth * 0.85; 
+    var flipCardHeight = screenHeight * 0.7; 
+
+    //Set the size of the outside border of the card
+    var flipCards = document.querySelectorAll('.flip-card');
+    flipCards.forEach(function(card) {
+        card.style.width = flipCardWidth + 'px';
+        card.style.height = flipCardHeight + 'px';
+    });
+
+    //h1
+    var responsiveHeadingFontSize1 = Math.max(22, 38 * (isMobile ? 0.75 : (screenWidth/1920)));
+    var headings = document.querySelectorAll('h1');
+    headings.forEach(function (heading) {
+        heading.style.fontSize = responsiveHeadingFontSize1 + 'pt';
+        heading.style.marginTop = (screenWidth * 0.01) + '0'; // Adjust vertical margin
+    });
+    //welcome text
+    var element = document.getElementById("welcomeText");
+    if (element) {
+        var responsiveWelcome = Math.max(22, 38 * (isMobile ? 0.75 : (screenWidth / 1920)));
+        element.style.fontSize = responsiveWelcome + 'pt';
+        element.style.marginTop = (screenWidth * 0.01) + '0'; // Adjust vertical margin
+
+    }
+    //name and surname of someone
+    var element2 = document.getElementById("userName");
+    if (element2) {
+        var responsiveWelcome = Math.max(22, 36 * (isMobile ? 0.75 : (screenWidth / 1920)));
+        var responsiveH2TopMargin = Math.max(15, 15 * (isMobile ? 0.75 : (screenWidth / 1920)));
+        element2.style.fontSize = responsiveWelcome + 'pt';
+        element2.style.marginTop = responsiveH2TopMargin + 'px';
+        element2.style.marginBottom = responsiveH2TopMargin + 'px';
+
+    }
+
+    //table number
+    var element3 = document.getElementById("Number");
+    if (element3) {
+        var responsiveWelcome = Math.max(22, 36 * (isMobile ? 0.75 : (screenWidth / 1920)));
+        var responsiveH2TopMargin = Math.max(30, 30 * (isMobile ? 0.75 : (screenWidth / 1920)));
+        element3.style.fontSize = responsiveWelcome + 'pt';
+        element3.style.marginTop = responsiveH2TopMargin + 'px';
+
+    }
+    //h2
+    var responsiveHeadingFontSize2 = Math.max(22, 28 * (isMobile ? 0.75 : (screenWidth/1920)));
+    var responsiveH2TopMargin = Math.max(15, 15 * (isMobile ? 0.75 : (screenWidth / 1920)));
+    var headings = document.querySelectorAll('h2');
+    headings.forEach(function (heading) {
+        heading.style.fontSize = responsiveHeadingFontSize2 + 'pt';
+        heading.style.marginTop = responsiveH2TopMargin + 'px';
+    });
+
+        // Adjust labels
+    var labels = document.querySelectorAll('label');
+    labels.forEach(function(label) {
+        label.style.fontSize = (screenWidth * 0.015) + 'px'; // Example: Font size based on screen width
+    });
+
+    // Adjust buttons
+    var respbuttonmargin = Math.max(16, 20 * (isMobile ? 0.75 : (screenWidth/1920)));
+    var respFontSize = Math.max(12, 16 * (isMobile ? 0.75 : (screenWidth/1920)));
+    var buttons = document.querySelectorAll('button');
+    buttons.forEach(function(button) {
+        button.style.fontSize = respFontSize + 'px'; // Adjust font size
+        button.style.marginTop = respbuttonmargin + 'px'; // Adjust vertical margin
+    });
+
+    // Adjust textboxes
+    var restextmargin = Math.max(16, 20 * (isMobile ? 0.75 : (screenWidth/1920)));
+    var respFonttext = Math.max(16, 18*(isMobile ? 0.75 : (screenWidth/1920)))
+    var textboxes = document.querySelectorAll('input[type="text"]');
+    textboxes.forEach(function(textbox) {
+        textbox.style.fontSize = respFonttext+ 'px'; // Adjust font size
+        textbox.style.marginTop = restextmargin+ 'px'; // Adjust vertical margin
+
+    });
+}
+
+// Add event listener for window resize
+window.addEventListener('resize', adjustElementSizes);
+
+// Initial adjustment on page load
+window.onload = adjustElementSizes;

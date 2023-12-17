@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
+html {
+    font-size: 16px; /* Base font size */
+}
+
 body {
      font-family: 'Dancing Script', cursive;
     background-image: url('https://github.com/DiehanDrotschie/Troue/blob/main/pic1.jpg?raw=true');
@@ -18,11 +22,11 @@ body {
     background-color: transparent;
     width: 80%; /* Relative width */
     height: 60vh; /* Relative height based on the viewport height */
-    perspective: 1000px;
     max-width: 550px; /* Maximum width to ensure it doesn't get too large on wider screens */
-    max-height: 450px; /* Maximum height */
+    max-height: 400px; /* Maximum height */
     margin: auto; /* To center the card in the container */
     margin-bottom: 70%;
+    justify-content: center;
 }
 
 /* Media query for smaller screens, like mobile devices */
@@ -117,7 +121,7 @@ input[type="text"] {
 
 button {
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 1% 2%;
     background-color: #333;
     color: white;
     border: none;
