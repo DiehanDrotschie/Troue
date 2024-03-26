@@ -2,10 +2,30 @@
 
 html {
     font-size: 16px; /* Base font size */
+    margin: 0;
+}
+
+footer {
+    position: fixed;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1vh 0;
+}
+
+.btn {
+    background-color: #c0bf8d;
+    color: black;
+    padding: 0.6vh 0.6vw;
+    height: 5.5vh;
+    cursor: pointer;
+    text-align: center;
 }
 
 body {
-     font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive;
     background-image: url('https://github.com/DiehanDrotschie/Troue/blob/main/pic1.jpg?raw=true');
     background-size: cover; /* Resize the background image to cover the entire container */
     background-position: center; /* Center the background image */
@@ -15,7 +35,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 0;
 }
+
 
 
 .flip-card {
@@ -37,7 +59,7 @@ body {
     }
 
         body {
-        background-size: auto; /* Example: Adjust background size on small screens */
+        background-size: cover; /* Example: Adjust background size on small screens */
         background-position: top ; /* Example: Adjust background position on small screens */
     }
 }
@@ -84,6 +106,14 @@ h2 {
     font-size: 22pt;
 
 }
+
+h3 {
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
 input[type="text"] {
     margin: 10px 0;
     padding: 10px;

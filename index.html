@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flip Card Form</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preload" href="https://github.com/DiehanDrotschie/Troue/blob/main/pic1.jpg?raw=true" as="image">
-</head>
-<body>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <h1>Anaïs en Johann </h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flip Card Form</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="preload"
+            href="https://github.com/DiehanDrotschie/Troue/blob/main/pic1.jpg?raw=true"
+            as="image"
+        />
+    </head>
+    <body>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h1>Anaïs en Johann</h1>
 
-                <h2>Enter your name and surname below:</h2>
-                <form autocomplete="on">
-                <input type="text" id="name" placeholder="Name" name = "firstname" autocomplete="given-name">
-                <input type="text" id="surname" placeholder="Surname" name = "lastname" autocomplete="family-name">
-                </form>
-                <button onclick="flipCard()">Find table</button>
-            </div>
-            <div class="flip-card-back">
-                <!-- container to show welcome message-->
-                <div id="welcomeContainer">
-                    <div id="welcomeText">Welcome:</div>
-                    <div id="userName"></div>
+                    <h2>Enter your name and surname below:</h2>
+                    <form autocomplete="on">
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Name"
+                            name="firstname"
+                            autocomplete="given-name"
+                        />
+                        <input
+                            type="text"
+                            id="surname"
+                            placeholder="Surname"
+                            name="lastname"
+                            autocomplete="family-name"
+                        />
+                    </form>
+                    <button onclick="flipCard()">Find table</button>
                 </div>
-                <!-- Show the table number-->
-                <h2>Table Number</h2>
-                <div id="Number">-</div>
-                <button onclick="flipback()">Back</button>
-
+                <div class="flip-card-back">
+                    <!-- container to show welcome message-->
+                    <div id="welcomeContainer">
+                        <div id="welcomeText">Welcome:</div>
+                        <div id="userName"></div>
+                    </div>
+                    <!-- Show the table number-->
+                    <h2>Table Number</h2>
+                    <div id="Number">-</div>
+                    <button onclick="flipback()">Back</button>
+                </div>
             </div>
         </div>
-    </div>
-
-
-</body>
+        <footer>
+            <a
+                href="https://drive.google.com/file/d/1_4NthrrGmgOSwpPJXfOH6FMHRafNWGUg/preview"
+                target="_blank"
+            >
+                <button class="btn">
+                    <i class="fa fa-download"></i>
+                    <h3>Table allocation page</h3>
+                </button>
+            </a>
+        </footer>
+    </body>
 </html>

@@ -110,6 +110,13 @@ function adjustElementSizes() {
         heading.style.marginTop = responsiveH2TopMargin + 'px';
     });
 
+    //h3
+    var responsiveHeadingFontSize2 = Math.max(12, 16 * (isMobile ? 0.75 : (screenWidth/1920)));
+    var headings = document.querySelectorAll('h3');
+    headings.forEach(function (heading) {
+        heading.style.fontSize = responsiveHeadingFontSize2 + 'pt';
+    });
+
         // Adjust labels
     var labels = document.querySelectorAll('label');
     labels.forEach(function(label) {
