@@ -89,7 +89,7 @@
     },
     {
         "idGuests": 12,
-        "Name": "Andr\u00e9",
+        "Name": "Andre",
         "Surname": "van Dyk",
         "Date_Name": "null",
         "Date_Surname": "null",
@@ -169,7 +169,7 @@
     },
     {
         "idGuests": 22,
-        "Name": "Hesmar\u00e9",
+        "Name": "Hesmare",
         "Surname": "Myburgh",
         "Date_Name": "null",
         "Date_Surname": "null",
@@ -401,7 +401,7 @@
     },
     {
         "idGuests": 51,
-        "Name": "Salom\u00e9",
+        "Name": "Salome",
         "Surname": "Teuteberg",
         "Date_Name": "null",
         "Date_Surname": "null",
@@ -425,7 +425,7 @@
     },
     {
         "idGuests": 54,
-        "Name": "Salom\u00e9",
+        "Name": "Salome",
         "Surname": "Parsons",
         "Date_Name": "null",
         "Date_Surname": "null",
@@ -497,7 +497,7 @@
     },
     {
         "idGuests": 63,
-        "Name": "Morn\u00e9",
+        "Name": "Morne",
         "Surname": "Greeff",
         "Date_Name": "null",
         "Date_Surname": "null",
@@ -561,7 +561,7 @@
     },
     {
         "idGuests": 71,
-        "Name": "Marin\u00e9",
+        "Name": "Marine",
         "Surname": "Brand",
         "Date_Name": "null",
         "Date_Surname": "null",
@@ -673,8 +673,8 @@
     },
     {
         "idGuests": 85,
-        "Name": "Schalk",
-        "Surname": "Willem Viljoen",
+        "Name": "Schalk Willem",
+        "Surname": "Viljoen",
         "Date_Name": "null",
         "Date_Surname": "null",
         "Table_Number": 9
@@ -729,7 +729,7 @@
     },
     {
         "idGuests": 92,
-        "Name": "Gizan\u00e8",
+        "Name": "Gizane",
         "Surname": "Scholtz",
         "Date_Name": "null",
         "Date_Surname": "null",
@@ -825,7 +825,7 @@
     },
     {
         "idGuests": 104,
-        "Name": "Jeann\u00e9",
+        "Name": "Jeanne",
         "Surname": "Laubscher",
         "Date_Name": "null",
         "Date_Surname": "null",
@@ -969,8 +969,8 @@
     },
     {
         "idGuests": 122,
-        "Name": "Van",
-        "Surname": "Zyl Bester",
+        "Name": "Van Zyl",
+        "Surname": "Bester",
         "Date_Name": "null",
         "Date_Surname": "null",
         "Table_Number": 13
@@ -1041,8 +1041,8 @@
     },
     {
         "idGuests": 131,
-        "Name": "Du",
-        "Surname": "Toit Cilliers",
+        "Name": "Du Toit",
+        "Surname": "Cilliers",
         "Date_Name": "null",
         "Date_Surname": "null",
         "Table_Number": 14
